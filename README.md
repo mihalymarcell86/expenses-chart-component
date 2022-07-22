@@ -55,8 +55,6 @@ Desktop
 
 ### What I learned
 
-In this project, I used the `<abbr>` element for the weekday abbreviations in the chart. While researching, I learned, that the `title` attribute doesn't always get read out on a screen reader, so I used `aria-label` instead.
-
 I experimented with CSS Modules combined with Sass. I found the `composes` property very useful. It works similarly to the Sass `@extends` directive. I find the automatically generated class names very convenient, using naming conventions is necessary anymore.
 
 I learned, that there exists a relative unit called `lh`, which is supposed to give us the line-height of an element, however, it is not supported by any of the browsers at the moment.

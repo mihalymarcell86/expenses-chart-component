@@ -23,7 +23,7 @@ function Chart() {
     "Sunday",
   ].map((day) => (
     <div className={scss.day}>
-      <abbr aria-label={day}>{day.slice(0, 3).toLowerCase()}</abbr>
+      <abbr title={day}>{day.slice(0, 3).toLowerCase()}</abbr>
     </div>
   ));
 
