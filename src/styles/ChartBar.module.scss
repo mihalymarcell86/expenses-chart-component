@@ -1,0 +1,33 @@
+@use "utilities/global" as *;
+
+.bar {
+  background-color: color(soft-red);
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &:hover,
+  &:focus {
+    background-color: hsl(10, 100%, 76%);
+    outline: none;
+  }
+}
+
+.today {
+  composes: bar;
+  background-color: color(cyan);
+  &:hover,
+  &:focus {
+    background-color: color(powder-blue);
+  }
+}
+
+.tooltip {
+  @include setFont(rem(15px), 20px, 700);
+  background-color: color(dark-brown);
+  border-radius: 3px;
+  padding: em(5px, 15px);
+  color: color(card-white);
+  position: absolute;
+  top: -35px;
+}

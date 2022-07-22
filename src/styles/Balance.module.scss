@@ -1,0 +1,25 @@
+@use "utilities/global" as *;
+
+.container {
+  padding: rem(20px) rem(24px) rem(22px) rem(20px);
+  background-color: color(soft-red);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  @include setFont(rem(15px), 20px, 400);
+  margin-bottom: em(4px, 15px);
+}
+
+.amount {
+  @include setFont(rem(24px), 31px, 700);
+}
+
+.logo {
+  width: rem(60px);
+  height: rem(40px);
+}

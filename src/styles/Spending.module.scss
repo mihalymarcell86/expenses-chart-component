@@ -1,0 +1,36 @@
+@use "./utilities/global" as *;
+
+.container {
+  background-color: color(card-white);
+  padding: rem(24px) rem(20px);
+  border-radius: 10px;
+}
+
+.title {
+  @include setFont(rem(24px), 31px, 700);
+  color: color(dark-brown);
+  margin-bottom: em(52px, 24px);
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.caption {
+  @include setFont(rem(15px), 20px, 400);
+  color: color(medium-brown);
+}
+
+.total {
+  @include setFont(rem(30px), 39px, 700);
+  color: color(dark-brown);
+  margin-top: em(4px, 30px);
+  text-align: right;
+}
+
+.percentage {
+  @include setFont(rem(15px), 20px, 700);
+  text-align: right;
+}
