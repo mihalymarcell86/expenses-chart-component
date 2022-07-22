@@ -13,30 +13,24 @@ function Chart() {
     <ChartBar key={item.day} data={item} max={maxSpend} />
   ));
 
+  const days = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ].map((day) => (
+    <div className={scss.day}>
+      <abbr aria-label={day}>{day.slice(0, 3).toLowerCase()}</abbr>
+    </div>
+  ));
+
   return (
     <div className={scss.chart}>
       {chartedData}
-      <div className={scss.day}>
-        <abbr aria-label="Monday">mon</abbr>
-      </div>
-      <div className={scss.day}>
-        <abbr aria-label="Tuesday">tue</abbr>
-      </div>
-      <div className={scss.day}>
-        <abbr aria-label="Wednesday">wed</abbr>
-      </div>
-      <div className={scss.day}>
-        <abbr aria-label="Thursday">thu</abbr>
-      </div>
-      <div className={scss.day}>
-        <abbr aria-label="Friday">fri</abbr>
-      </div>
-      <div className={scss.day}>
-        <abbr aria-label="Saturday">sat</abbr>
-      </div>
-      <div className={scss.day}>
-        <abbr aria-label="Sunday">sun</abbr>
-      </div>
+      {days}
     </div>
   );
 }

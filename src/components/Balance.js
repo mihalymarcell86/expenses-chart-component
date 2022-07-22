@@ -5,8 +5,8 @@ function Balance() {
   return (
     <div className={scss.container}>
       <div>
-        <div className={scss.label}>My balance</div>
-        <div className={scss.amount}>$921.48</div>
+        <p className={scss.caption}>My balance</p>
+        <p className={scss.amount}>$921.48</p>
       </div>
       <img src={src_logo} alt="app logo" className={scss.logo} />
     </div>

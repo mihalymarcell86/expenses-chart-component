@@ -1,25 +1,32 @@
 @use "utilities/global" as *;
 
 .container {
-  padding: rem(20px) rem(24px) rem(22px) rem(20px);
+  padding-top: fluid(rem(20px), rem(27px));
+  padding-left: fluid(rem(20px), rem(32px));
+  padding-right: fluid(rem(24px), rem(39px));
+  padding-bottom: fluid(rem(22px), rem(38px));
   background-color: color(soft-red);
   color: white;
-  border-radius: 10px;
+  border-radius: fluid(10px, 20px);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.label {
-  @include setFont(rem(15px), 20px, 400);
-  margin-bottom: em(4px, 15px);
+.caption {
+  font-size: fluid(rem(15px), rem(18px));
+  line-height: fluid(20px, 23px);
+  font-weight: 400;
+  margin-bottom: fluid(rem(4px), rem(8px));
 }
 
 .amount {
-  @include setFont(rem(24px), 31px, 700);
+  font-size: fluid(rem(24px), rem(32px));
+  line-height: fluid(31px, 42px);
+  font-weight: 700;
 }
 
 .logo {
-  width: rem(60px);
-  height: rem(40px);
+  width: fluid(rem(60px), rem(72px));
+  height: fluid(rem(40px), rem(48px));
 }

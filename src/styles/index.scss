@@ -5,15 +5,15 @@
 body {
   background-color: color(cream);
   font-family: $font-dm-sans;
-  min-height: 100vh;
   padding-inline: rem(16px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #root {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 abbr {

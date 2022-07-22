@@ -1,6 +1,8 @@
+import scss from "../styles/Attribution.module.scss";
+
 function Attribution() {
   return (
-    <footer class="attribution">
+    <footer class={scss.attribution}>
       Challenge by{" "}
       <a
         href="https://www.frontendmentor.io?ref=challenge"
