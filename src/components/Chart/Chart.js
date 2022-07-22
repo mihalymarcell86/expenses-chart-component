@@ -9,10 +9,6 @@ function Chart() {
     0
   );
 
-  const chartedData = data.map((item) => (
-    <ChartBar key={item.day} data={item} max={maxSpend} />
-  ));
-
   const days = [
     "Monday",
     "Tuesday",
@@ -21,8 +17,14 @@ function Chart() {
     "Friday",
     "Saturday",
     "Sunday",
-  ].map((day) => (
-    <div className={scss.day}>
+  ];
+
+  const chartedData = data.map((item, index) => (
+    <ChartBar key={item.day} data={item} max={maxSpend} day={days[index]} />
+  ));
+
+  const abbrDays = days.map((day) => (
+    <div className={scss.day} aria-hidden="true">
       <abbr title={day}>{day.slice(0, 3).toLowerCase()}</abbr>
     </div>
   ));
@@ -30,7 +32,7 @@ function Chart() {
   return (
     <div className={scss.chart}>
       {chartedData}
-      {days}
+      {abbrDays}
     </div>
   );
 }

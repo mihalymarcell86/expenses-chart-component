@@ -13,7 +13,7 @@ function ChartBar(props) {
     <div
       className={props.data.day === today.toLowerCase() ? scss.today : scss.bar}
       style={{ height: barHeight }}
-      aria-label={`$${props.data.amount}`}
+      aria-label={`${props.day}: $${props.data.amount}`}
       tabIndex="0"
       onMouseOver={() => setShowTooltip(true)}
       onMouseLeave={() => setShowTooltip(false)}
