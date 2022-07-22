@@ -23,9 +23,9 @@ function Chart() {
     <ChartBar key={item.day} data={item} max={maxSpend} day={days[index]} />
   ));
 
-  const abbrDays = days.map((day) => (
+  const abbrDays = data.map((item, index) => (
     <div className={scss.day} aria-hidden="true">
-      <abbr title={day}>{day.slice(0, 3).toLowerCase()}</abbr>
+      <abbr title={days[index]}>{item.day}</abbr>
     </div>
   ));
 
