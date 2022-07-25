@@ -10,6 +10,9 @@
   &:focus {
     background-color: hsl(10, 100%, 76%);
     outline: none;
+    .tooltip {
+      display: block;
+    }
   }
 }
 
@@ -23,6 +26,7 @@
 }
 
 .tooltip {
+  display: none;
   font-size: fluid(rem(15px), rem(18px));
   line-height: fluid(20px, 23px);
   font-weight: 700;
